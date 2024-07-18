@@ -18,10 +18,10 @@
         clear_background(BLACK);
 
         // Updating state
-        animator.next_step();
+        animator.update();
 
         // Draw sprite
-        animator.draw();
+        animator.draw(200., 200.);
 
 
         next_frame().await
