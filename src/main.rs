@@ -22,8 +22,7 @@ async fn main() {
         clear_background(BLACK);
 
         animator.update();
-        animator.draw(250., 250.);
-
+        animator.draw_scaled(0., 0., Vec2::new(240.0, 160.0));
 
         next_frame().await
     }
